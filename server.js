@@ -1,5 +1,12 @@
 var http = require("http");
 var fs = require("fs");
+var exp = require("express");
+var exp_handlebars = require("express-handlebars");
+
+var trailers = require("./trailers");
+
+var app = express();
+app.engine("handlebars", exp_handlebars({defaultlayout: "main"}));
 
 console.log("Starting server...");
 
