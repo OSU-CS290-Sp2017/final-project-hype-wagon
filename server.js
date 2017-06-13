@@ -1,17 +1,33 @@
-var http = require("http");
+var path = require("path");
 var fs = require("fs");
-var exp = require("express");
+var express = require("express");
 var exp_handlebars = require("express-handlebars");
 
 var trailers = require("./trailers");
 
 var app = express();
 app.engine("handlebars", exp_handlebars({defaultlayout: "main"}));
+app.set("view engine", "handlebars");
 
-console.log("Starting server...");
+console.log("Starting express server...");
 
-var server = http.createServer(requestHandler);
+/*
+app.get("/", function(req, res, err) {
+	res.render("index");
+});
 
+app.get("/index.html", function(req, res, err) {
+	res.render("index");
+});
+
+app.get("/style.css", function(req, res, err) {
+	res.render("style");
+});
+*/
+
+// var server = http.createServer(requestHandler);
+
+/*
 function handleHTML(response) {
 	var data = fs.readFileSync("./index.html");
 	
@@ -43,11 +59,18 @@ function requestHandler(request, response) {
 	
 	response.end();
 }
+*/
+
+app.use(express.static("public"));
+
+app.use(function(req, res) {
+	res.send("public/index.html");
+});
 
 if (process.env.PORT) {
 //	console.log("Using defined");
-	server.listen(PORT);
+	app.listen(PORT);
 } else {
 //	console.log("Using 3000");
-	server.listen(3000);
+	app.listen(3000);
 }
