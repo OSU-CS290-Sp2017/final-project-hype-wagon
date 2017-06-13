@@ -1,0 +1,21 @@
+{
+    "wonder_woman" : {
+        "title": "Wonder Woman",
+        "url": "https://www.youtube.com/watch?v=1Q8fG0TtVAY",
+        "tags" : [
+            "gal gadot",
+            "dc",
+            "superhero"
+        ]
+    },
+
+    "coco" : {
+        "title": "Coco",
+        "url": "https://www.youtube.com/watch?v=zNCz4mQzfEI",
+        "tags" : [
+            "pixar",
+            "disney",
+            "animation"
+        ]
+    }
+}
