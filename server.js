@@ -11,19 +11,14 @@ app.set("view engine", "handlebars");
 
 console.log("Starting express server...");
 
-/*
-app.get("/", function(req, res, err) {
-	res.render("index");
-});
 
-app.get("/index.html", function(req, res, err) {
-	res.render("index");
-});
+app.get("/trailers", function(req, res, err) {
+	var args = {
+		trailer: trailers
+	};
 
-app.get("/style.css", function(req, res, err) {
-	res.render("style");
+	res.render("trailersPage", args);
 });
-*/
 
 // var server = http.createServer(requestHandler);
 
@@ -61,8 +56,10 @@ function requestHandler(request, response) {
 }
 */
 
+// Lets any request for localhost:3000 get the files in public/
 app.use(express.static("public"));
 
+// Default to index.html
 app.use(function(req, res) {
 	res.send("public/index.html");
 });
