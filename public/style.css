@@ -279,6 +279,7 @@ a:link, a:visited {
 }
 
 .modal-input-elem label {
+  color: #fff;
   font-weight: 600;
   flex: 1 75px;
   margin-right: 10px;
@@ -293,5 +294,4 @@ a:link, a:visited {
 }
 
 .modal-input-elem textarea {
-  min-height: 64px;
-}
+  min-he
