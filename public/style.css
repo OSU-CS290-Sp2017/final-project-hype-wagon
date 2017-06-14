@@ -2,6 +2,8 @@ body, html{
 	padding: 0;
 	margin: 0;
 	height: 100%;
+	font-family: Roboto, Helvetica, sans-serif;
+
 }
 
 main{
@@ -63,7 +65,7 @@ a:link, a:visited {
 	display: block;
 	padding-left: 10px;
 	color: white;
-	font-family: "Courier New", Courier, monospace;
+	/* font-family: "Courier New", Courier, monospace; */
 }
 
 #sidebarUL ul li a:hover {
@@ -83,7 +85,7 @@ a:link, a:visited {
 	height: 30px;
 	background-color: #eee;
 	border: 1px solid #dadada;
-	font-family: "Courier New", Courier, monospace;
+	/* font-family: "Courier New", Courier, monospace; */
 	vertical-align: top;
 }
 
@@ -119,7 +121,7 @@ a:link, a:visited {
 	border: solid 3px #1a1a1a;
 	margin: 1px;
 	font-size: 20px;
-	font-family: "Courier New", Courier, monospace;
+	/* font-family: "Courier New", Courier, monospace; */
 }
 
 .trailer-info p {
