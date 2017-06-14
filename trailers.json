@@ -1,9 +1,9 @@
 {
-	"wonder_woman":{"title":"Wonder Woman","url":"https://www.youtube.com/watch?v=1Q8fG0TtVAY","tags":["gal gadot","dc","superhero"]},
-	"coco":{"title":"Coco","url":"https://www.youtube.com/watch?v=zNCz4mQzfEI","tags":["pixar","disney","animation"]},
+	"wonder_woman":{"title":"Wonder Woman","url":"www.youtube.com/watch?v=1Q8fG0TtVAY","tags":["gal gadot","dc","superhero"]},
+	"coco":{"title":"Coco","url":"www.youtube.com/watch?v=zNCz4mQzfEI","tags":["pixar","disney","animation"]},
 	"test":{"title":"test","url":"somelink.com"},
 	"Testing":{"title":"Testing","url":"somelink.com"},
-	"Testing 3":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
+	"Testing 3":{"title":"Bleh","url":"google.com", "tags": ["test"]},
 	"Testing 4":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
 	"Testing 5":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
 	"Testing 6":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},

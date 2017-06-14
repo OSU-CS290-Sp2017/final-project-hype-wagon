@@ -51,8 +51,7 @@ a:link, a:visited {
 	height: 100%;
 	box-sizing: border-box;
 	float:left;
-	width: 15%;
-	min-width: 225px;
+	width: 225px;
 	padding: 0;
 }
 
@@ -73,13 +72,6 @@ a:link, a:visited {
 	background-color: #c0392b;
 }
 
-#trailerInfoContainer{	
-	width: 85%;
-	height: 100%;
-	display: inline-block;
-	overflow: auto;
-}
-
 #navbar-search-input {
 	padding: 4px;
 	font-size: 16px;
@@ -91,23 +83,43 @@ a:link, a:visited {
 	vertical-align: top;
 }
 
+#navbar-search-input:focus {
+	background-color: #ffffff;
+}
+
 #navbar-search-button {
-	vertical-align: top;
-	margin: 0;
-	padding: 3px 5px 0 5px;
-	font-size: 30px;
-	width: 15%;
-	height: 100%;
-	background: none;
 	border: none;
-	color: white;
+	color: #343434;
+	background-color: #bdc3c7;
+
+	height: 40px;
+	width: 20.8%;
+
+	margin: 0 0 0 -5px;
+	padding: 0;
+
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 28px;
 	cursor: pointer;
+}
+
+#navbar-search-button:hover {
+	background-color: #585858;
 }
 
 .navlink {
 	width: 100%;
 	font-size: 30px;
 	text-shadow: 1px 1px #1a1a1a;
+}
+
+#trailerInfoContainer{	
+	width: 89%;
+	height: 100%;
+	display: inline-block;
+	overflow: auto;
 }
 
 .trailer {
@@ -121,7 +133,7 @@ a:link, a:visited {
 
 .trailer-info {
 	border: solid 3px #1a1a1a;
-	margin: 1px;
+	margin: 1px 0 1px 3px;
 	font-size: 20px;
 	/* font-family: "Courier New", Courier, monospace; */
 }
