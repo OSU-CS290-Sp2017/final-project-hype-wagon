@@ -20,41 +20,22 @@ app.get("/trailers", function(req, res, err) {
 	res.render("trailersPage", args);
 });
 
-// var server = http.createServer(requestHandler);
-
-/*
-function handleHTML(response) {
-	var data = fs.readFileSync("./index.html");
-	
-	response.write(data);
-}
-
-function handleCSS(response) {
-	var data = fs.readFileSync("./style.css");
-	
-	response.write(data);
-}
-
-function requestHandler(request, response) {
-//	console.log("URL: " + request.url);
-	response.statusCode = 200;
-	if (request.url == "/index.html") {
-		response.setHeader("Content-Type", "text/html");
-//		console.log("HTML");
-		handleHTML(response);
-	} else if (request.url == "/style.css") {
-		response.setHeader("Content-Type", "text/css");
-//		console.log("CSS");
-		handleCSS(response);
-	} else if (request.url == "/") {
-		response.setHeader("Content-Type", "text/html");
-//		console.log("/");
-		handleHTML(response);
+app.post("/trailers/addTrailer", function(req, res, err) {
+	var new_trailer = {
+		title: req.body.title,
+		url: req.body.url
+//		tags: req.body.tags
 	}
-	
-	response.end();
-}
-*/
+	trailers[title] = new_trailer;
+
+	fs.writeFile("trailers.json", JSON.stringify(trailers), function(err) {
+		if (err) {
+			res.status(500).send("Unable to write new trailer.");
+		} else {
+			res.status(200).send();
+		}
+	});
+});
 
 // Lets any request for localhost:3000 get the files in public/
 app.use(express.static("public"));
