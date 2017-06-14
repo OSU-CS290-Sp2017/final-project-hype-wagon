@@ -12,27 +12,33 @@
 </head>
 
 <body>
+
 	<header>
 	<!-- Our navigation bar and header stuff go here -->
 		
 	<a href="#"><h1 class="site-title"> Hype Wagon </h1></a>
 
-	<nav class="navbar">
-		<ul class="navlist">
-			<li class="navitem navlink active"><a href="#">Home</a></li>
-			<li class="navitem navlink"><a href="#">Top</a></li>
-			<li class="navitem navlink"><a href="#">Trending</a></li>
-			<li class="navitem navlink"><a href="#">Categories</a></li>
-			<li class="navitem navlink"><a href="#">All</a></li>
-			<li class="navitem navbar-search">
-				<input type="text" id="navbar-search-input" placeholder="Search...">
-				<button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
-			</li>
-		</ul>
-	</nav>
 	</header>
 
 	<main>
+
+		<div id="sidebarNav" class="sidebar">
+			<nav id="sidebarUL" class="navbar">
+				<ul class="navlist">
+					<li class="navitem navbar-search">
+						<input type="text" id="navbar-search-input" placeholder="Search...">
+						<button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
+					<li class="navitem navlink active"><a href="#">Home</a></li>
+					<li class="navitem navlink"><a href="#">Top</a></li>
+					<li class="navitem navlink"><a href="#">Trending</a></li>
+					<li class="navitem navlink"><a href="#">Categories</a></li>
+					<li class="navitem navlink"><a href="#">All</a></li>
+
+					</li>
+				</ul>
+			</nav>
+		</div>
+
 		<div id="modal-backdrop" class="hidden"></div>
 		<div id="add-trailer-modal" class="hidden">
 			<h1>Add a New Trailer!</h1>
@@ -52,15 +58,15 @@
 			<div class="modal-footer">
 				<button type="button" class="modal-cancel-button">Cancel</button>
 				<button type="button" class="modal-accept-button">Add Trailer</button>
-        	</div>
+			</div>
 		</div>
 
-		<article class="trailer">
+		<article id="trailerWindow" class="trailer">
 			<div class="trailer-info">
 				<!-- Each is a paragraph which will have its information filled in dynamically -->
-				<p class="trailer-title"> Title: Wonder Woman </p>
-				<p class="trailer-url"> URL: https://somelink.com </p>
-				<p class="trailer-tags"> Tags: superhero, dc, gal_gadot </p>
+				<p class="trailerInfoItem trailer-title"> Title: Wonder Woman </p>
+				<p class="trailerInfoItem trailer-url"> URL: https://somelink.com </p>
+				<p class="trailerInfoItem trailer-tags"> Tags: superhero, dc, gal_gadot </p>
 			</div>
 		</article>
 	</main>
