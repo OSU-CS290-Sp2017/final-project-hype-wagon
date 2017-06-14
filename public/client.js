@@ -34,6 +34,14 @@ window.onload = function () {
 
 	var trailerary = document.getElementsByClassName("trailer");
 	var searchbutton = document.getElementById("navbar-search-button");
+	var searchInputElem = document.getElementById("navbar-search-input");
+
+	searchInputElem.addEventListener("keyup", function(event) {
+		event.preventDefault();
+		if (event.keyCode == 13) {
+			searchbutton.click();
+		}
+	});
 
 	function searchs() {
 		var searchbar = document.querySelector("#navbar-search-input");
@@ -47,6 +55,7 @@ window.onload = function () {
 	}
 
 	searchbutton.addEventListener('click', searchs);
+
 
 
 	var modal_accept_button = document.querySelector('.modal-accept-button');
@@ -87,4 +96,6 @@ window.onload = function () {
 			close_modal();
 		});
 	}
+
+
 };
