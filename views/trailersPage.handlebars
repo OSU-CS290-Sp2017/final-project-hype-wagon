@@ -1,72 +1,98 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<title>Hype Wagon</title>
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
-	<link rel="stylesheet" href="style.css" media="screen">
-
-</head>
-
-<body>
-	<header>		
-	<a href="/"><img id="titleWagonImage" class="titleImage" src="wagon.png" alt="Title Image"></a>
-	<a href="/"><h1 class="site-title"> Hype Wagon </h1></a>
-	</header>
-
-	<main>
-		<div id="pageContainer">
-			<div id="sidebarNav" class="sidebar">
-				<nav id="sidebarUL" class="navbar">
-					<ul class="navlist">
-						<li class="navitem navbar-search">
-							<input type="text" id="navbar-search-input" placeholder="Search...">
-							<button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
-						<li class="navitem navlink active"><a href="/">Home</a></li>
-						<li class="navitem navlink"><a href="#top">Top</a></li>
-						<li class="navitem navlink"><a href="#trending">Trending</a></li>
-						<li class="navitem navlink"><a href="#categories">Categories</a></li>
-						<li class="navitem navlink"><a href="#">All</a></li>
-
-						</li>
-					</ul>
-				</nav>
-			</div>
-
-			<div id="modal-backdrop" class="hidden"></div>
-			<div id="add-trailer-modal" class="hidden">
-				<h1>Add a New Trailer!</h1>
-				<button type="button" class="modal-close-button">&times;</button>
-
-				<div class="modal-body">
-					<div class="modal-input-elem">
-						<label for="trailer-title">Movie's Title:</label>
-						<input type="text" id="trailer-title">
-					</div>
-					<div class="modal-input-elem">
-						<label for="trailer-url">Link to the Trailer on YouTube:</label>
-						<input type="text" id="trailer-url">
-					</div>
-				</div>
-
-				<div class="modal-footer">
-					<button type="button" class="modal-cancel-button">Cancel</button>
-					<button type="button" class="modal-accept-button">Add Trailer</button>
-				</div>
-			</div>
-
-			<div id="trailerInfoContainer">
-				{{#each trailer}}
-					{{> trailerCard}}
-				{{/each}}
-			</div>
-	</main>
-
-	<button type="button" id="add-trailer-button"></button>
-</body>
-
-<script src="client.js" charset="utf-8"></script>
-
-</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Hype Wagon</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+	<link rel="stylesheet" href="style.css" media="screen">
+
+</head>
+
+<body>
+	<header>		
+	<a href="/"><img id="titleWagonImage" class="titleImage" src="wagon.png" alt="Title Image"></a>
+	<a href="/"><h1 class="site-title"> Hype Wagon </h1></a>
+	</header>
+
+	<main>
+		<div id="pageContainer">
+			<div id="sidebarNav" class="sidebar">
+				<nav id="sidebarUL" class="navbar">
+					<ul class="navlist">
+						<li class="navitem navbar-search">
+							<input type="text" id="navbar-search-input" placeholder="Search...">
+							<button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
+						<li class="navitem navlink active"><a href="/">Home</a></li>
+						<li class="navitem navlink"><a href="#top">Top</a></li>
+						<li class="navitem navlink"><a href="#trending">Trending</a></li>
+						<li class="navitem navlink"><a href="#categories">Categories</a></li>
+						<li class="navitem navlink"><a href="#">All</a></li>
+
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div id="modal-backdrop" class="hidden"></div>
+			<div id="add-trailer-modal" class="hidden">
+				<h1>Add a New Trailer!</h1>
+				<button type="button" class="modal-close-button">&times;</button>
+
+				<div class="modal-body">
+					<div class="modal-input-elem">
+						<label for="trailer-title">Movie's Title:</label>
+						<input type="text" id="trailer-title">
+					</div>
+					<div class="modal-input-elem">
+						<label for="trailer-url">Link to the Trailer on YouTube:</label>
+						<input type="text" id="trailer-url">
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="modal-cancel-button">Cancel</button>
+					<button type="button" class="modal-accept-button">Add Trailer</button>
+				</div>
+			</div>
+
+			<div id="trailerInfoContainer">
+				{{#each trailer}}
+					{{> trailerCard}}
+				{{/each}}
+			</div>
+	</main>
+	<button type="button" id="add-trailer-button">+</button>
+
+	<div id="modal-backdrop" class="hidden"></div>
+	<div id="add-trailer-modal" class="hidden">
+		<div class="modal-dialog">
+
+			<div class="modal-header">
+				<h1>Add a New Trailer!</h1>
+				<button type="button" class="modal-close-button">&times;</button>
+			</div>
+
+			<div class="modal-body">
+				<div class="modal-input-elem">
+					<label for="trailer-title">Movie's Title:</label>
+					<input type="text" id="trailer-title">
+				</div>
+				<div class="modal-input-elem">
+					<label for="trailer-url">Link to the Trailer on YouTube:</label>
+					<input type="text" id="trailer-url">
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="modal-cancel-button">Cancel</button>
+				<button type="button" class="modal-accept-button">Add Trailer</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="client.js" charset="utf-8"></script>
+
+</html>
