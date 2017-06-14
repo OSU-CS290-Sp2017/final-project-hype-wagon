@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
 	<link rel="stylesheet" href="style.css" media="screen">
 
+	<script src="client.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -32,6 +33,28 @@
 	</header>
 
 	<main>
+		<div id="modal-backdrop" class="hidden"></div>
+		<div id="add-trailer-modal" class="hidden">
+			<h1>Add a New Trailer!</h1>
+			<button type="button" class="modal-close-button">&times;</button>
+
+			<div class="modal-body">
+				<div class="modal-input-elem">
+					<label for="trailer-title">Movie's Title:</label>
+					<input type="text" id="trailer-title">
+				</div>
+				<div class="modal-input-elem">
+					<label for="trailer-url">Link to the Trailer on YouTube:</label>
+					<input type="text" id="trailer-url">
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="modal-cancel-button">Cancel</button>
+				<button type="button" class="modal-accept-button">Add Trailer</button>
+        	</div>
+		</div>
+
 		<article class="trailer">
 			<div class="trailer-info">
 				<!-- Each is a paragraph which will have its information filled in dynamically -->
@@ -41,6 +64,8 @@
 			</div>
 		</article>
 	</main>
+
+	<button id="add-trailer-button">
 </body>
 
 </html>
