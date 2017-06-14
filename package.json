@@ -1,11 +1,15 @@
 {
-    "name": "cs290-final-hype-wagon",
-    "version": "0.25.0",
-    "description": "Final project for CS 290 - Hype Wagon trailer streaming service",
-    "main" : "server.js",
-    "repository" :{
-        "type" : "git",
-        "url" : "https://github.com/OSU-CS290-Sp2017/final-project-hype-wagon"
-    },
-    "license" : "MIT"
+  "name": "cs290-final-hype-wagon",
+  "version": "0.25.0",
+  "description": "Final project for CS 290 - Hype Wagon trailer streaming service",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OSU-CS290-Sp2017/final-project-hype-wagon"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0"
+  }
 }
