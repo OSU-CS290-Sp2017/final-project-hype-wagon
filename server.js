@@ -14,7 +14,6 @@ app.use(bodyParser.json());
 
 console.log("Starting express server...");
 
-/*
 app.get("/", function(req, res, err) {
 	var args = {
 		trailer: trailers
@@ -22,7 +21,6 @@ app.get("/", function(req, res, err) {
 
 	res.render("trailersPage", args);
 });
-*/
 
 app.get("/trailers", function(req, res, err) {
 	var args = {
@@ -86,11 +84,12 @@ app.post("trailers/search", function(req, res, err) {
 // Lets any request for localhost:3000 get the files in public/
 app.use(express.static("public"));
 
+/*
 // Default to index.html
 app.use(function(req, res) {
 	res.send("public/index.html");
 });
-
+*/
 
 if (process.env.PORT) {
 //	console.log("Using defined");
