@@ -14,26 +14,14 @@ body {
 	background-color: white;
 }
 
+a:link, a:visited {
+ 	text-decoration: none;
+}
+
 .titleImage{
 	float: left;
 	margin: 0;
 	padding: 10px 10px 0 10px;
-
-}
-
-a:link, a:visited {
-	color: white;
- 	text-decoration: none;
-}
-
-#sidebarUL ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-#sidebarUL ul li a {
-	display: block
 }
 
 .site-title {
@@ -45,7 +33,14 @@ a:link, a:visited {
 	background-color: #1a1a1a;
 	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
 	text-shadow: 1px 1px #e74c3c;
-	color: #fff;
+	color: white;
+	white-space: nowrap;
+}
+
+#pageContainer {
+	height: 100%;
+	width: 100%;
+	white-space: nowrap;
 }
 
 .sidebar{
@@ -58,13 +53,27 @@ a:link, a:visited {
 	padding: 0;
 }
 
-.sidebar a:hover{
+#sidebarUL ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebarUL ul li a {
+	display: block;
+	padding-left: 10px;
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+}
+
+#sidebarUL ul li a:hover {
 	background-color: #c0392b;
 }
 
-.sidebar a {
-	padding-left: 10px;
-	font-family: "Courier New", Courier, monospace;
+#trailerInfoContainer{	
+	width: 85%;
+	height: 100%;
+	display: inline-block;
 }
 
 #navbar-search-input {
@@ -97,9 +106,13 @@ a:link, a:visited {
 	text-shadow: 1px 1px #1a1a1a;
 }
 
-.trailerInfoItem{
-	margin: 0;
-	padding: 0;
+.trailer {
+	display: block;
+	cursor: pointer;
+}
+
+.trailer div:hover {
+	background-color: #ecf0f1;
 }
 
 .trailer-info {
@@ -109,24 +122,24 @@ a:link, a:visited {
 	font-family: "Courier New", Courier, monospace;
 }
 
+.trailer-info p {
+	padding: 0 5px;
+	margin: 0;
+}
+
+.trailerInfoItem{
+	margin: 0;
+	padding: 0;
+}
+
 .trailerInfoCat {
 	font-weight: bold;
 	color: #e74c3c;
 	text-shadow: 1px 1px #1a1a1a;
 }
 
-
-.trailer-info p {
-	padding: 0 5px;
-	margin: 0;
-}
-
-
 .hidden {
 	display: none;
-}
-.trailer {
-	float: left;
 }
 
 #add-trailer-button {
