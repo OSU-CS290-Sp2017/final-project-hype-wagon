@@ -77,22 +77,15 @@ modal_accept_button.addEventListener('click', function (event) {
 });
 */
 
-var trailerClick = document.getElementsByClassName('trailer-info');
-
-var searchButton = document.getElementById("navbar-search-button");
-
-console.log(searchButton);
-
-searchButton.addEventListener('click', function(event) {
-    alert("Whoop.");
-});
-
+var trailerClick = document.getElementsByClassName('trailer');
 console.log(trailerClick);
 
-/*
-trailerClick.addEventListener('click', function (event) {
+for (var i = 0; i < trailerClick.length ; i++){
+  trailerClick[i].addEventListener('click', function (event) {
           alert("Whoop.");
         });
-*/
+}
+
+
 
 };
