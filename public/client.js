@@ -1,10 +1,11 @@
 var add_trailer_button = document.querySelector("#add-trailer-button");
 add_trailer_button.addEventListener("click", function() {
+    console.log("Event listener for unhiding modal...");
     var modal_backdrop = document.querySelector("#modal-backdrop");
     var modal = document.querySelector("#add-trailer-modal");
 
-    modal_backdrop.remove("hidden");
-    modal.remove("hidden");
+    modal_backdrop.classList.remove("hidden");
+    modal.classList.remove("hidden");
 });
 
 function close_modal() {
@@ -28,8 +29,10 @@ modal_cancel_button.addEventListener('click', close_modal);
 
 var modal_accept_button = document.querySelector('.modal-accept-button');
 modal_accept_button.addEventListener('click', function (event) {
+    console.log("Event listener for adding trailers...");
 	var trailer_title = document.querySelector('#trailer-title');
 	var trailer_url = document.querySelector('#trailer-url');
+    console.log("Title: ", trailer_title);
 	
 	if (!trailer_title.value || !trailer_url.value) {
 		alert("Please fill out all fields.");
@@ -51,8 +54,8 @@ modal_accept_button.addEventListener('click', function (event) {
     });
 
     var post_body = {
-        title: trailer_title,
-        url: trailer_url
+        title: trailer_title.value,
+        url: trailer_url.value
     };
     request.send(JSON.stringify(post_body));
 	
