@@ -14,6 +14,16 @@ app.use(bodyParser.json());
 
 console.log("Starting express server...");
 
+/*
+app.get("/", function(req, res, err) {
+	var args = {
+		trailer: trailers
+	};
+
+	res.render("trailersPage", args);
+});
+*/
+
 app.get("/trailers", function(req, res, err) {
 	var args = {
 		trailer: trailers
@@ -29,7 +39,7 @@ app.post("/trailers/addTrailer", function(req, res, err) {
 		url: req.body.url
 //		tags: req.body.tags
 	};
-	console.log("Title: ", req.body.title);
+//	console.log("Title: ", req.body.title);
 	trailers[new_trailer.title] = new_trailer;
 
 	fs.writeFile("trailers.json", JSON.stringify(trailers), function(err) {
@@ -41,6 +51,38 @@ app.post("/trailers/addTrailer", function(req, res, err) {
 	});
 });
 
+/*
+app.post("/trailers/removeTrailer", function(req, res, err) {
+	console.log("Removing trailer...");
+	var gone_trailer = req.body.title;
+//	console.log("Title: ", req.body.title);
+	delete trailers[gone_trailer.title];
+
+	fs.writeFile("trailers.json", JSON.stringify(trailers), function(err) {
+		if (err) {
+			res.status(500).send("Unable to write to trailers.");
+		} else {
+			res.status(200).send();
+		}
+	});
+});
+*/
+
+/*
+app.post("trailers/search", function(req, res, err) {
+	console.log("Searching trailers...");
+	var response_json = {};
+	for (var key in trailers) {
+		tags_str = stringify(key.tags);
+		if (key.title.search(req.body.value) !== -1 || tags_str.search(req.body.value)) {
+			response_json[key.title] = key;
+		}
+	}
+
+	response.send(response_json);
+});
+*/
+
 // Lets any request for localhost:3000 get the files in public/
 app.use(express.static("public"));
 
@@ -48,6 +90,7 @@ app.use(express.static("public"));
 app.use(function(req, res) {
 	res.send("public/index.html");
 });
+
 
 if (process.env.PORT) {
 //	console.log("Using defined");
