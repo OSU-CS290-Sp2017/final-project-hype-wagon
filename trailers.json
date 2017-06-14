@@ -1,21 +1,9 @@
 {
-	"wonder_woman":{"title":"Wonder Woman","url":"https://www.youtube.com/watch?v=1Q8fG0TtVAY","tags":["gal gadot","dc","superhero"]},
-	"coco":{"title":"Coco","url":"https://www.youtube.com/watch?v=zNCz4mQzfEI","tags":["pixar","disney","animation"]},
-	"jungle":{"Jungle":"test","url":"https://www.youtube.com/watch?v=CJIYns1aqzY", tags:["Radcliffe", "adventure", "fantasy"},
+	"wonder_woman":{"title":"Wonder Woman","url":"https://www.youtube.com/watch?v=1Q8fG0TtVAY","short-url":"1Q8fG0TtVAY","tags":["gal gadot","dc","superhero"]},
+	"coco":{"title":"Coco","url":"https://www.youtube.com/watch?v=zNCz4mQzfEI","short-url":"zNCz4mQzfEI","tags":["pixar","disney","animation"]},
+	"jungle":{"title":"Jungle","url":"https://www.youtube.com/watch?v=CJIYns1aqzY","short-url":"CJIYns1aqzY", "tags":["Radcliffe", "adventure", "fantasy"]},
 	"Testing":{"title":"Testing","url":"somelink.com"},
-	"Testing 3":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 4":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 5":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 6":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 7":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 8":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 9":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 10":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 11":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 12":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 13":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 14":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 15":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
-	"Testing 16":{"title":"Bleh","url":"www.google.com", "tags": ["test"]},
+	"thor 3":{"title":"Thor 3","url":"https://www.youtube.com/watch?v=v7MGUNV8MxU","short-url":"v7MGUNV8MxU"},
 	"Testing 17":{"title":"Bleh","url":"www.google.com", "tags": ["test"]}
+
 }
