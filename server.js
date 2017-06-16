@@ -34,7 +34,8 @@ app.post("/trailers/addTrailer", function(req, res, err) {
 	console.log("Adding trailer...");
 	var new_trailer = {
 		title: req.body.title,
-		url: req.body.url
+		url: req.body.url,
+		"short-url": req["short-url"]
 //		tags: req.body.tags
 	};
 //	console.log("Title: ", req.body.title);

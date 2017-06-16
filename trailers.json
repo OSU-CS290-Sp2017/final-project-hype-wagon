@@ -1,9 +1,1 @@
-{
-	"wonder_woman":{"title":"Wonder Woman","url":"https://www.youtube.com/watch?v=1Q8fG0TtVAY","short-url":"1Q8fG0TtVAY","tags":["gal gadot","dc","superhero"]},
-	"coco":{"title":"Coco","url":"https://www.youtube.com/watch?v=zNCz4mQzfEI","short-url":"zNCz4mQzfEI","tags":["pixar","disney","animation"]},
-	"jungle":{"title":"Jungle","url":"https://www.youtube.com/watch?v=CJIYns1aqzY","short-url":"CJIYns1aqzY", "tags":["Radcliffe", "adventure", "fantasy"]},
-	"Testing":{"title":"Testing","url":"somelink.com"},
-	"thor 3":{"title":"Thor 3","url":"https://www.youtube.com/watch?v=v7MGUNV8MxU","short-url":"v7MGUNV8MxU"},
-	"Testing 17":{"title":"Bleh","url":"www.google.com", "tags": ["test"]}
-
-}
+{"wonder_woman":{"title":"Wonder Woman","url":"https://www.youtube.com/watch?v=1Q8fG0TtVAY","short-url":"1Q8fG0TtVAY","tags":["gal gadot","dc","superhero"]},"coco":{"title":"Coco","url":"https://www.youtube.com/watch?v=zNCz4mQzfEI","short-url":"zNCz4mQzfEI","tags":["pixar","disney","animation"]},"jungle":{"title":"Jungle","url":"https://www.youtube.com/watch?v=CJIYns1aqzY","short-url":"CJIYns1aqzY","tags":["Radcliffe","adventure","fantasy"]},"Testing":{"title":"Testing","url":"somelink.com"},"thor 3":{"title":"Thor 3","url":"https://www.youtube.com/watch?v=v7MGUNV8MxU","short-url":"v7MGUNV8MxU"},"Testing 17":{"title":"Bleh","url":"www.google.com","tags":["test"]},"asdf":{"title":"asdf","url":"https://www.youtube.com/watch?v=yox9CKYh7EU&test=1"},"AS":{"title":"AS","url":"https://www.youtube.com/watch?v=XTDVyVoASA8"},"asdf3s":{"title":"asdf3s","url":"sdfs"},"sdfwefd":{"title":"sdfwefd","url":"https://www.youtube.com/watch?v=yox9CKYh7EU&test=1"},"sadf":{"title":"sadf","url":"https://www.youtube.com/watch?v=yox9CKYh7EU&test=1"},"adsg":{"title":"adsg","url":"https://www.youtube.com/watch?v=yox9CKYh7EU&test=1"},"qweasd":{"title":"qweasd","url":"https://www.youtube.com/watch?v=yox9CKYh7EU&test=1"}}

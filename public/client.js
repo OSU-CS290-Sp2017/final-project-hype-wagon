@@ -50,7 +50,7 @@ window.onload = function () {
 			var tags = document.getElementsByClassName("trailerInfoItem trailer-tags")[i].textContent;
 			if(title.search(searchbar.value) === -1 && tags.search(searchbar.value) === -1){
 				trailerary[i].style.display = 'none';
-			}      
+			}
 		}
 	}
 
@@ -64,13 +64,14 @@ window.onload = function () {
 			console.log("Event listener for adding trailers...");
 			var trailer_title = document.querySelector('#trailer-title');
 			var trailer_url = document.querySelector('#trailer-url');
+			var trailer_short = getShortUrlFromLong(trailer_url.value);
 			console.log("Title: ", trailer_title);
-			
+
 			if (!trailer_title.value || !trailer_url.value) {
 				alert("Please fill out all fields.");
 				return;
 			}
-			
+
 			var post_url = "/trailers/addTrailer";
 
 			var request = new XMLHttpRequest();
@@ -89,13 +90,30 @@ window.onload = function () {
 
 			var post_body = {
 				title: trailer_title.value,
-				url: trailer_url.value
+				url: trailer_url.value,
+				"short-url": trailer_short
 			};
 			request.send(JSON.stringify(post_body));
-			
+
 			close_modal();
 		});
 	}
 
 
 };
+
+function getShortUrlFromLong(longUrl) {
+	var a = longUrl.split("?");
+	var b = a[1].split("&");
+
+	var c = [];
+	b.forEach(function(e) {
+		var i = e.split("=");
+		c.push(i[0]);
+		c.push(i[1]);
+	})
+
+	var pos = c.indexOf("v") + 1;
+
+	return c[pos];
+}
